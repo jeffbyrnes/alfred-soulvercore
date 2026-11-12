@@ -1,7 +1,11 @@
 import SoulverCore
 
-Task {
-  try await CurrencyRefresher.shared.refreshIfNeeded()
+Task { @MainActor in
+  do {
+    try await CurrencyRefresher.shared.refreshIfNeeded()
+  } catch {
+    fputs("Currency refresh failed; using cached or bundled rates: \(error)\n", stderr)
+  }
   print(calc())
   exit(0)
 }
