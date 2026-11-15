@@ -1,8 +1,8 @@
+# Alfred SoulverCore
+
 Use the keyword "c" (for "calculate") to start writing SoulverCore expressions.
 
-SoulverCore (https://github.com/soulverteam/SoulverCore) from Soulver
-(https://soulver.app). SoulverCore icon from Matthew Skiles
-(http://matthewskiles.com/).
+[SoulverCore](https://github.com/soulverteam/SoulverCore) from [Soulver](https://soulver.app). SoulverCore icon from [Matthew Skiles](http://matthewskiles.com/).
 
 Run `./scripts/build.sh` to build a universal workflow with the Xcode Swift toolchain.
 Open `.build/SoulverCore.alfredworkflow` to install it in Alfred.
